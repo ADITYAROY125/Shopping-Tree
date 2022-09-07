@@ -1,0 +1,19 @@
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+      font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: green;
+  }
+  .w3-dark-grey, .w3-hover-dark-grey:hover, .w3-dark-gray, .w3-hover-dark-gray:hover {
+    color: #fff !important;
+    background: linear-gradient(to bottom,rgb(167, 233, 166) 25%,rgba(34, 29, 29, 0.2));
+  }
+ .logo{
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: green;
+  font-weight: bolder;
+ }

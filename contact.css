@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+/*
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4cd9c6;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #6fe8d7;
+}
+*/
+/*.nav10{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.nav10-center h1{
+  border: black;
+  color: var(brown);
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgb(8, 67, 17);
+}
+.nav10 .nav10-center h1 span{
+  color: var(green);
+  text-shadow: 2px 2px 3px black;
+}
+*/
+.container{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(7, 82, 28, 0.9),rgba(52, 20, 6, 0.9)), url("Pic127.jpeg");
+display: flex;
+align-items: center;
+justify-content: center;
+}
+form{
+  background-image: linear-gradient(rgba(111, 131, 233, 0.9),rgba(111, 131, 233, 0.9)), url("Pic128.jpeg");
+  /*background: white;*/
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px) saturate(180%);
+}
+form h3{
+  color: brown;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background-image: linear-gradient(rgba(111, 131, 233, 0.9),rgba(111, 131, 233, 0.9)), url("Pic128.jpeg");
+  background: rgb(240, 236, 236);
+  font-size: 16px;
+  background: radial-gradient(brown);
+  
+}
+form button{
+  padding: 15px;
+  background: #0f5515;
+  color: aliceblue;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}

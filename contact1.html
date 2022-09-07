@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><em>Contacts</em></title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Amatic+SC:wght@700&family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="./contact.css">  
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;" >
+            <h3> CONTACT US: </h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Enter your email adress" required>
+            <input type="text" id="Phone" placeholder="Phone number" required>
+            <input type="text" id="Region" placeholder="Your region" required>
+            <input type="message" rows="4" id="Message" placeholder="Enter your message" required>
+            <button type="Submit">Send</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            var name = $('name').val();
+            var email = $('email').val();
+            var text = $('Phone').val();
+            var text = $('Region').val();
+            var massage = $('Message').val();
+            var Body='Name; '+name+'<br>Email:'+email+'<br>Phone:'+Phone+'<br>Region:'+Region+'<br>Massage:'+Message;
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "adityaroy228924@gmail.com",
+    Password : "F8F5CBCE017AD028563325FA18A639B4D756",
+    To : 'adityaroy228924@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is subject",
+    Body : "And this is the body"
+}).then(
+  message =>{
+    if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+					}
+
+				}
+			);
+
+
+
+		}
+    </script>
+</body>
+</html>
